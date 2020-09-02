@@ -2,19 +2,28 @@
 <html>
     <head>
         <title>Exercicios-DW1A3</title>
+        <link href="../../CSS/form.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
         <meta charset="utf-8">
-        <style>
-            div {
-                margin: 10px 0
-            }     
-        </style>
     </head>
     <body>
         <h1 style="text-align: center;">Cadastro de Usuário</h1>
+        <h2>Seja bem vindo!</h2>
         <hr>
-        <form action="#" id="form_id">
+        <blockquote>
+            Ganhamos um reforço na nossa equipe, a partir de hoje temos um novo colaborador vestindo a nossa camisa.<br>
+
+            Muitas das horas do nosso dia e da nossa vida passamos no trabalho, por isso tentamos sempre fazer com que o tempo na empresa seja, 
+            
+            além de produtivo, muito agradável, criando sempre um ambiente saudável e amistoso.
+            
+            Desejamos que você se sinta bem entre nós, que faça parte das nossas vivências, 
+            
+            que encontre oportunidades e condições para aprender e crescer. 
+        </blockquote>
+        <form action="#" id="form_id" style="background-color: black;">
             <fieldset class="login-form">
-                <legend>Detalhes do login: </legend>
+                <legend style="color:blue; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Detalhes do login: </legend>
                 <label for="email">Email: </label>
                 <input type="email" id="email">
                 <label for="password">Senha: </label>
@@ -41,11 +50,11 @@
                         <span>Cor: </span>
                         <br>
                         <input type="checkbox" id="color1" name="color1" value="red">
-                        <label for="color1"> Vermelho</label><br>
+                        <label for="color1" style="color: red"> Vermelho</label><br>
                         <input type="checkbox" id="color2" name="color2" value="green">
-                        <label for="color2"> Verde</label><br>
+                        <label for="color2" style="color:green"> Verde</label><br>
                         <input type="checkbox" id="color3" name="color3" value="blue">
-                        <label for="color3"> Azul</label>
+                        <label for="color3" style="color: blue;"> Azul</label>
                         <br>
                     </div>
                     <div class="dropdown">
@@ -62,7 +71,7 @@
 
                 <span>Digite seu CEP: </span>
                 <input type="search" name="search" placeholder="Procure o Cep">
-                <input type="submit" value="search">
+                <input type="submit" value="Search">
                 <br><br>
 
                 <label for="date">Data de nascimento: </label>
@@ -75,12 +84,22 @@
                 <input type="tel" id="telefone">
                 <br><br>
 
-                <label for="image-upload">Carregue uma foto sua de perfil:</label>
-                <input id="image-upload" type="file" value="Imagem">
+                <label for="image-upload" class="file">carregue uma foto &#187;</label>
+                <input id="image-upload" type="file">
             </div>
-            <hr>
-            <input type=image src="input-img.jpg" width="30" height="15"> 
-            <input type="submit" value="Enviar">
+            <div class="submit">
+                <input type="submit" value="Enviar" class="input-enviar">
+            </div>
         </form>
+        <hr>
+        <footer>
+            <span>
+                Obrigada por se cadastrar!
+                <a href="https://github.com/BiancaAriga/Exercicios-DW1A3" target="_blank">Visit my git!</a>
+                <a href="https://github.com/BiancaAriga/Exercicios-DW1A3"target="_blank">
+                    <input type=image src="input-img.jpg" class="input-img"> 
+                </a>
+            </span>
+        </footer>
     </body>
 </html>
