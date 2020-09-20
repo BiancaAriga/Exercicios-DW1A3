@@ -1,0 +1,94 @@
+section {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgba(182, 182, 182);
+}
+.grid {
+    display: grid;
+}
+div {
+    border: 1px solid;
+    margin: 5px;
+    padding-top: 20px;
+    background-color: rgba(216, 216, 216);
+    font-weight: bold;
+}
+.resultado {
+    grid-area: resultado;
+    padding-right: 10px;
+    text-align: end;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(211, 211, 211);
+}
+.ac {
+    grid-area: ac;
+}
+.porcentagem {
+    grid-area: porcentagem;
+}
+.multiplicacao {
+    grid-area: multiplicacao;
+}
+.divisao {
+    grid-area: divisao;
+}
+.sete {
+    grid-area: sete;
+}
+.oito {
+    grid-area: oito;
+}
+.nove {
+    grid-area: nove;
+}
+.igual {
+    grid-area: igual;
+}
+.quatro {
+    grid-area: quatro;
+}
+.cinco {
+    grid-area: cinco;
+}
+.seis {
+    grid-area: seis;
+}
+.menos {
+    grid-area: menos;
+    padding-top: 12px;
+}
+.um {
+    grid-area: um;
+}
+.dois {
+    grid-area: dois;
+}
+.tres {
+    grid-area: tres;
+}
+.mais {
+    grid-area: mais;
+    padding-top: 50px;
+    background-color: rgba(173, 173, 173);
+}
+.zero {
+    grid-area: zero;
+    background-color: rgba(173, 173, 173);
+}
+.ponto {
+    grid-area: ponto;
+}
+.grid-calculadora {
+    grid-template-areas: 
+    "resultado resultado resultado resultado"
+    "ac porcentagem multiplicacao divisao"
+    "sete oito nove igual"
+    "quatro cinco seis menos"
+    "um dois tres mais"
+    "zero zero ponto mais";
+    text-align: center;
+}
